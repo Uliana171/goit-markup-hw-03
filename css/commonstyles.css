@@ -35,15 +35,28 @@ ul {
 
 img {
   display: block;
-  max: width 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
 }
 
-.page-header {
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: o auto;
+  border: 1px solid red;
+}
+
+.menu-nav,
+.nav-list,
+.contacts-header {
+  display: flex;
+}
+
+.nav-list {
 }
 
 /* дизайн логотипу */
@@ -62,16 +75,9 @@ body {
   color: var(--white-text);
 }
 
-.cont {
-  color: var(--gray-text);
-}
-
 /* колір силок навігації */
 .nav {
   color: var(--black-text);
-}
-
-.menu-nav {
 }
 
 /* всі посилання при ховері */
@@ -81,15 +87,28 @@ body {
   color: var(--blue-text);
 }
 
+/* зняти підкресдення посилань */
+
 .link {
   text-decoration: none;
+  font-style: normal;
+}
+
+/* контакти у хедері */
+
+.cont {
+  color: var(--gray-text);
+}
+
+/* навігпція у хедері */
+
+.menu-nav {
 }
 
 .contacts-header {
 }
 
 .contacts-header-items {
-  color: var(--gray-text);
   font-weight: 500;
   font-size: 14px;
 }
@@ -119,5 +138,4 @@ footer {
   color: var(--gray-light);
   font-weight: normal;
   font-size: 14px;
-  font-style: normal;
 }
