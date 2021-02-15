@@ -1,12 +1,14 @@
-.centrum {
+/* заголовок з кнопкою */
+.hero {
   background-color: var(--grphite-backraund);
 }
-.centrum-title {
+.hero-title {
   color: var(--white-text);
   font-weight: 900;
   font-size: 44px;
+  text-transform: uppercase;
 }
-.centrum-btn {
+.hero-btn {
   color: var(--white-text);
   font-weight: 700;
   font-size: 16px;
@@ -15,7 +17,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+/* заголовок з кнопкою */
 
+/* наші переваги */
 .features {
 }
 .features-items {
@@ -32,9 +36,10 @@
   font-weight: 400;
   font-size: 14px;
 }
+/* наші переваги */
 
-.servises {
-}
+/* послуги */
+
 .servises-title {
   color: var(--black-text);
   font-style: 400;
@@ -44,7 +49,14 @@
 }
 .servises-items {
 }
+.servises-image {
+  width: 370px;
+  height: 294px;
+}
 
+/* послуги */
+
+/* наша команда */
 .team {
 }
 .team-title {
@@ -56,6 +68,12 @@
 }
 .team-items {
 }
+
+.team-image {
+  width: 270px;
+  height: 260px;
+}
+
 .team-items-name {
   color: var(--black-text);
   font-style: 400;
@@ -70,3 +88,4 @@
   font-size: 16px;
   line-height: 19px;
 }
+/* наша команда */

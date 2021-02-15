@@ -31,32 +31,11 @@
 /* щоб прибрати крапки із списка */
 ul {
   list-style: none;
-}
-
-img {
-  display: block;
-  width: 100px;
-  height: 100px;
+  padding-inline-start: 0px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: o auto;
-  border: 1px solid red;
-}
-
-.menu-nav,
-.nav-list,
-.contacts-header {
-  display: flex;
-}
-
-.nav-list {
 }
 
 /* дизайн логотипу */
@@ -65,6 +44,9 @@ body {
   color: var(--black);
   font-weight: 700;
   font-size: 26px;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo > .web {
@@ -75,9 +57,12 @@ body {
   color: var(--white-text);
 }
 
-/* колір силок навігації */
+/*силки навігації в хедері */
 .nav {
   color: var(--black-text);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 /* всі посилання при ховері */
@@ -87,40 +72,62 @@ body {
   color: var(--blue-text);
 }
 
-/* зняти підкресдення посилань */
-
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 
-/* контакти у хедері */
-
-.cont {
-  color: var(--gray-text);
+.header,
+.manu-nav,
+.nav-list,
+.contacts-header {
+  display: flex;
 }
 
-/* навігпція у хедері */
+.manu-nav {
+  margin-left: 93px;
+}
 
-.menu-nav {
+/* центрувати по вертикалі */
+
+.nav-list,
+.contacts-header {
+  align-items: center;
+}
+
+.nav-list li {
+  margin-right: 50px;
+}
+
+.nav-list li:last-child {
+  margin-right: 331px;
+}
+
+.nav-list {
+}
+
+.contacts-header li:not(:last-child) {
+  margin-right: 36px;
 }
 
 .contacts-header {
-}
-
-.contacts-header-items {
+  color: var(--gray-text);
   font-weight: 500;
   font-size: 14px;
 }
 
-footer {
+.container {
+  border: 1px solid red;
+
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.footer {
   background-color: var(--grphite-backraund);
 }
 
 .adress {
-  color: var(--white-text);
-  font-weight: 400;
-  font-size: 14px;
 }
 
 .adress-text {
@@ -130,12 +137,9 @@ footer {
   font-style: normal;
 }
 
-.contfooter {
-  color: var(--gray-light);
-}
-
-.contacts-items {
+.contacts-footer {
   color: var(--gray-light);
   font-weight: normal;
   font-size: 14px;
+  font-style: normal;
 }
