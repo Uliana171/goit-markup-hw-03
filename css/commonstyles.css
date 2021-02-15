@@ -32,6 +32,8 @@
 ul {
   list-style: none;
   padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 body {
@@ -44,7 +46,9 @@ body {
   color: var(--black);
   font-weight: 700;
   font-size: 26px;
+}
 
+.header .logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -81,17 +85,11 @@ body {
 .nav-list,
 .contacts-header {
   display: flex;
+  align-items: center; /* центрувати по вертикалі */
 }
 
 .manu-nav {
   margin-left: 93px;
-}
-
-/* центрувати по вертикалі */
-
-.nav-list,
-.contacts-header {
-  align-items: center;
 }
 
 .nav-list li {
@@ -102,11 +100,8 @@ body {
   margin-right: 331px;
 }
 
-.nav-list {
-}
-
-.contacts-header li:not(:last-child) {
-  margin-right: 36px;
+.contacts-header li:last-child {
+  margin-left: 36px;
 }
 
 .contacts-header {
@@ -127,14 +122,27 @@ body {
   background-color: var(--grphite-backraund);
 }
 
-.adress {
+.footer .container {
+  align-items: flex-start;
 }
 
-.adress-text {
+.footer .logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.address {
+  margin-bottom: 60px;
+}
+
+.address-text {
   color: var(--white-text);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
+
+  margin: 0px;
 }
 
 .contacts-footer {
@@ -142,4 +150,8 @@ body {
   font-weight: normal;
   font-size: 14px;
   font-style: normal;
+}
+
+.contacts-footer-list li {
+  margin-top: 9px;
 }
