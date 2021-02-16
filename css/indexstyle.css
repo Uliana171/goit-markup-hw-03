@@ -1,9 +1,16 @@
+h1 {
+  margin: 0px;
+}
+
 /* заголовок з кнопкою */
 .hero {
   background-color: var(--grphite-background);
 }
 
-.hero .container {
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: center;
 }
 
 .hero-title {
@@ -11,30 +18,34 @@
   font-weight: 900;
   font-size: 44px;
   text-transform: uppercase;
-
-  margin-top: 200px;
   margin-bottom: 30px;
   width: 696px;
+  text-align: center;
+  margin-left: 237px;
 }
+
 .hero-btn {
+  background-color: var(--blue-text);
   color: var(--white-text);
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  background: #2196f3;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  /* display: inline; */
+  text-align: center;
+  max-width: 100%;
+
+  display: block;
+  padding: 0px;
 
   width: 200px;
   height: 50px;
+  border: none;
 
-  padding: 10px 32px;
-  margin-bottom: 200px;
+  margin-left: 485px;
 }
-
 /* заголовок з кнопкою */
 
 /* наші переваги */
@@ -123,8 +134,13 @@
 
 /* наша команда */
 .team {
-  /* width: 1600px; */
+  margin-bottom: 94px;
 }
+
+.container-hero-title {
+  align-self: center;
+}
+
 .team-title {
   color: var(--black-text);
   font-style: 400;
@@ -139,7 +155,6 @@
 
 .team-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .team-items:last-child {
@@ -186,3 +201,9 @@
   margin-block-start: 0px;
 }
 /* наша команда */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
