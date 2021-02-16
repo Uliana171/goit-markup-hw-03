@@ -10,7 +10,16 @@
 
   --white-text: rgba(255, 255, 255, 1);
 
-  --grphite-backraund: rgba(47, 48, 58, 1);
+  --white-background: rgba(255, 255, 255, 1);
+  --grphite-background: rgba(47, 48, 58, 1);
+  --button-background: rgba(245, 244, 250, 1);
+
+  --white-border: rgba(238, 238, 238, 1);
+
+  --shadow: rgba(0px 2px 2px 0px 0, 0, 0, 0, 12),
+    rgba(0px 1px 2px 0px 0, 0, 0, 0, 08), rgba(0px 3px 1px 0px 0, 0, 0, 0, 1);
+
+  --project-gap: 30px;
 }
 
 /* зробити невидимим заголовок */
@@ -110,16 +119,20 @@ body {
   font-size: 14px;
 }
 
+/* для всіх контейнерів */
+
 .container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
 }
 
+/* для всіх контейнерів */
+
 .footer {
-  background-color: var(--grphite-backraund);
+  background-color: var(--grphite-background);
 }
 
 .footer .container {

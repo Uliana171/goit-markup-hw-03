@@ -1,27 +1,140 @@
-/* .btn {
-} */
-.list-btn {
+.main-conteiner {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
+
+.list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 51px;
+}
+
+.list-btn > li {
+  margin-right: 8px;
+}
+
+.item-btn {
+  background-color: var(--button-background);
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.item-btn:active,
+.item-btn:focus {
+  color: var(--white-text);
+  background-color: var(--blue-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+  padding: 6px 22px;
+
+  border-radius: 4px;
+  border: transparent;
+
+  outline: none;
+}
+/* .list-btn > li {
+  background-color: var(--button-background);
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+
+.list-btn > li:active {
+  background-color: var(--blue-text);
+  border: transparent;
+  color: var(--white-text);
+  box-shadow: var(--shadow);
+}
+
 .item-btn {
   color: var(--black-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+
+  text-align: center;
+  margin: 6px 22px;
+
+  border: none;
+  background-color: transparent;
+  max-block-size: 100%;
 }
 
+.item-btn:active,
+.item-btn:focus {
+  color: var(--white-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+  background-color: var(--blue-text);
+  margin: 6px 22px;
+  border: none;
+} */
+
 .projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--project-gap));
+  margin-left: calc(-1 * var(--project-gap));
 }
-.projects-list {
+.projects > .projects-item {
+  /* project-gap = 30px в списку перемінних */
+  flex-basis: calc(100% / 3 - var(--project-gap));
+  margin-left: var(--project-gap);
+  margin-top: var(--project-gap);
 }
+
+.projects-item {
+  background: var(--white-background);
+  border: 1px solid var(--white-border);
+  box-sizing: border-box;
+}
+
+.project-content {
+  margin: 20px 24px;
+}
+
 .projects-title {
   color: var(--black-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
+  margin-bottom: 4px;
+  text-align: left;
 }
 .projects-text {
   color: var(--gray-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h4 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }

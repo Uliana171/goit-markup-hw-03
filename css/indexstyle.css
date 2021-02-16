@@ -1,6 +1,6 @@
 /* заголовок з кнопкою */
 .hero {
-  background-color: var(--grphite-backraund);
+  background-color: var(--grphite-background);
 }
 
 .hero .container {
