@@ -122,8 +122,6 @@ body {
 /* для всіх контейнерів */
 
 .container {
-  /* border: 1px solid red; */
-
   width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
@@ -137,6 +135,7 @@ body {
 
 .footer .container {
   align-items: flex-start;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -146,7 +145,6 @@ body {
 }
 
 .address {
-  margin-bottom: 60px;
 }
 
 .address-text {
