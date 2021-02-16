@@ -129,6 +129,8 @@ body {
 
 /* для всіх контейнерів */
 
+/* footer */
+
 .footer {
   background-color: var(--grphite-background);
 }
@@ -166,3 +168,4 @@ body {
 .contacts-footer-list li {
   margin-top: 9px;
 }
+/* footer */
