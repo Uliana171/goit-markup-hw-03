@@ -5,9 +5,6 @@ h1 {
 /* заголовок з кнопкою */
 .hero {
   background-color: var(--grphite-background);
-}
-
-.hero > .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -58,7 +55,8 @@ h1 {
 /* наші переваги */
 
 .features {
-  margin: 94px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features .container ul {
@@ -103,9 +101,7 @@ h1 {
 /* допрацювати картинки */
 
 .servises {
-  margin-bottom: 94px;
-  margin-left: 0;
-  margin-right: 0px;
+  padding-bottom: 94px;
 }
 
 .servises-list {

@@ -1,6 +1,6 @@
 .main-conteiner {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list-btn {
@@ -63,12 +63,14 @@
 
 .projects-item {
   background: var(--white-background);
-  border: 1px solid var(--white-border);
   box-sizing: border-box;
 }
 
 .project-content {
-  margin: 20px 24px;
+  padding: 20px 24px 19px 24px;
+  border-left: 1px solid var(--white-border);
+  border-right: 1px solid var(--white-border);
+  border-bottom: 1px solid var(--white-border);
 }
 
 .projects-title {
@@ -87,16 +89,18 @@
   text-align: left;
 }
 
+.projects-thumb {
+  min-width: 370px;
+  min-height: 290px;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-h4 {
-  margin: 0px;
-}
-
+h4,
 p {
   margin: 0px;
 }
